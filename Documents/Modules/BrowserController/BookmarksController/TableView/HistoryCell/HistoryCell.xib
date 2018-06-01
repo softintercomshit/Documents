@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="RAu-hQ-w3c" customClass="HistoryCell" customModule="Documents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RAu-hQ-w3c" id="R3v-24-sCk">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHG-Ge-mBn">
+                        <rect key="frame" x="15" y="4" width="352" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="py8-V1-ygj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meu-WB-cDe">
+                        <rect key="frame" x="15" y="23.5" width="352" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="sgu-zp-1t8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="meu-WB-cDe" firstAttribute="leading" secondItem="R3v-24-sCk" secondAttribute="leading" constant="15" id="6JK-K9-jJV"/>
+                    <constraint firstItem="OHG-Ge-mBn" firstAttribute="leading" secondItem="R3v-24-sCk" secondAttribute="leading" constant="15" id="6h4-cR-EdY"/>
+                    <constraint firstAttribute="trailing" secondItem="meu-WB-cDe" secondAttribute="trailing" constant="8" id="EzO-Ua-YCh"/>
+                    <constraint firstAttribute="trailing" secondItem="OHG-Ge-mBn" secondAttribute="trailing" constant="8" id="UFk-Jy-YYo"/>
+                    <constraint firstAttribute="bottom" secondItem="meu-WB-cDe" secondAttribute="bottom" constant="4" id="WAY-ZZ-bmr"/>
+                    <constraint firstItem="OHG-Ge-mBn" firstAttribute="top" secondItem="R3v-24-sCk" secondAttribute="top" constant="4" id="kCS-Gl-FFr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="OHG-Ge-mBn" id="tXc-6f-X4h"/>
+                <outlet property="urlLabel" destination="meu-WB-cDe" id="RXb-r8-Nz1"/>
+            </connections>
+            <point key="canvasLocation" x="-15" y="163"/>
+        </tableViewCell>
+    </objects>
+</document>

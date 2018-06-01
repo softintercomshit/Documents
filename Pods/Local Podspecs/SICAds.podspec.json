@@ -1,0 +1,118 @@
+{
+  "name": "SICAds",
+  "version": "7.4.9",
+  "summary": "Client SICAds library.",
+  "description": "SICAds iOS Static library distributed via cocoapods",
+  "homepage": "https://github.com/admincaf/SICAds_library",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Dmitrii Prihodco": "dmitrii.prihodco@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/admincaf/SICAds_library.git",
+    "tag": "7.4.9"
+  },
+  "source_files": "include/*.h",
+  "public_header_files": "include/*.h",
+  "preserve_paths": "libSICAds.a",
+  "ios": {
+    "vendored_libraries": "libSICAds.a",
+    "frameworks": [
+      "AdSupport",
+      "AudioToolbox",
+      "AVFoundation",
+      "CFNetwork",
+      "CoreFoundation",
+      "CoreGraphics",
+      "CoreLocation",
+      "CoreMedia",
+      "CoreMotion",
+      "CoreTelephony",
+      "EventKit",
+      "EventKitUI",
+      "Foundation",
+      "MediaPlayer",
+      "MessageUI",
+      "MobileCoreServices",
+      "QuartzCore",
+      "Security",
+      "Social",
+      "StoreKit",
+      "SystemConfiguration",
+      "UIKit",
+      "WebKit"
+    ]
+  },
+  "platforms": {
+    "ios": "8.1"
+  },
+  "requires_arc": true,
+  "dependencies": {
+    "AdColony": [
+
+    ],
+    "AFNetworking": [
+
+    ],
+    "AmazonAd": [
+
+    ],
+    "AppLovin": [
+
+    ],
+    "ChartboostSDK": [
+
+    ],
+    "FBAudienceNetwork": [
+
+    ],
+    "Flurry-iOS-SDK/FlurryAds": [
+
+    ],
+    "Flurry-iOS-SDK/FlurrySDK": [
+
+    ],
+    "Google-Mobile-Ads-SDK": [
+
+    ],
+    "InMobiSDK": [
+
+    ],
+    "MillenialMediaSDK": [
+
+    ],
+    "MobFoxSDK": [
+
+    ],
+    "mopub-ios-sdk": [
+
+    ],
+    "OneSignal": [
+
+    ],
+    "RevvForMobile": [
+
+    ],
+    "SmaatoSDK": [
+
+    ],
+    "SpotX-SDK": [
+
+    ],
+    "StartApp": [
+
+    ],
+    "UnityAds": [
+
+    ],
+    "VungleSDK-iOS": [
+      "~> 4.1"
+    ],
+    "YandexMobileAds": [
+
+    ]
+  }
+}

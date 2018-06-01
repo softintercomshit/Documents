@@ -1,0 +1,122 @@
+PODS:
+  - AdColony (3.2.1)
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.6.0)
+  - AlamofireImage (3.3.0):
+    - Alamofire (~> 4.5)
+  - AmazonAd (2.2.15.1)
+  - AppLovin (3.5.2)
+  - ChartboostSDK (7.0.3)
+  - DropDown (2.3.1)
+  - FBAudienceNetwork (4.26.0)
+  - Flurry-iOS-SDK/FlurryAds (8.3.4):
+    - Flurry-iOS-SDK/FlurrySDK
+  - Flurry-iOS-SDK/FlurrySDK (8.3.4)
+  - Google-Mobile-Ads-SDK (7.21.0)
+  - InMobiSDK (7.0.1)
+  - LTHPasscodeViewController (3.9.1)
+  - MillenialMediaSDK (6.1.0)
+  - MobFoxSDK (3.2.0)
+  - mopub-ios-sdk (4.11.1)
+  - OneSignal (2.6.2)
+  - Revmob (9.1.0)
+  - RevvForMobile (3.2.0)
+  - SICAds (7.4.9):
+    - AdColony
+    - AFNetworking
+    - AmazonAd
+    - AppLovin
+    - ChartboostSDK
+    - FBAudienceNetwork
+    - Flurry-iOS-SDK/FlurryAds
+    - Flurry-iOS-SDK/FlurrySDK
+    - Google-Mobile-Ads-SDK
+    - InMobiSDK
+    - MillenialMediaSDK
+    - MobFoxSDK
+    - mopub-ios-sdk
+    - OneSignal
+    - RevvForMobile
+    - SmaatoSDK
+    - SpotX-SDK
+    - StartApp
+    - UnityAds
+    - VungleSDK-iOS (~> 4.1)
+    - YandexMobileAds
+  - SmaatoSDK (8.1.4)
+  - SpotX-SDK (2.3.3)
+  - StartApp (3.5.1)
+  - UnityAds (2.1.1)
+  - VungleSDK-iOS (4.1.0)
+  - YandexMobileAds (2.7.2):
+    - YandexMobileMetrica (< 3.0.0, >= 2.8.0)
+  - YandexMobileMetrica (2.9.1)
+  - Zip (1.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - DropDown
+  - LTHPasscodeViewController
+  - Revmob (from `https://raw.githubusercontent.com/DmitriiP/Revmob-Ios-Pod/master/Revmob.podspec`)
+  - SICAds (from `https://github.com/admincaf/SICAds_library.git`)
+  - Zip
+
+EXTERNAL SOURCES:
+  Revmob:
+    :podspec: https://raw.githubusercontent.com/DmitriiP/Revmob-Ios-Pod/master/Revmob.podspec
+  SICAds:
+    :git: https://github.com/admincaf/SICAds_library.git
+
+CHECKOUT OPTIONS:
+  SICAds:
+    :commit: d088fdadfcef2886a09ba393c57ec96aeae1517e
+    :git: https://github.com/admincaf/SICAds_library.git
+
+SPEC CHECKSUMS:
+  AdColony: f317841fa95909e4d000511d5d65b5c3de459d2f
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
+  AmazonAd: 9b7226322bc124343d279a98c28cdae26c48a0e7
+  AppLovin: 3460954712860851bfd9b4f9061d062621a2b4f2
+  ChartboostSDK: e3021ea0b0af22ac4b89669d5860b9e430dde696
+  DropDown: 20499c7b2731b0d21609af924e47c7677a2be50d
+  FBAudienceNetwork: 6dd6f669c046737c50f8e5e67d47b207ab74df92
+  Flurry-iOS-SDK: eed8399800cf16fe7e0121831150a7957297df99
+  Google-Mobile-Ads-SDK: 76c1540a71ea6fa9122f5bef4d92d685d5e96aad
+  InMobiSDK: a8b4f0be0698e056146ed4d6f592f2c5a0f24057
+  LTHPasscodeViewController: f468d93fed2ffdc8843ac78c270c60d058e3affb
+  MillenialMediaSDK: 1dd57bcf6ab522679b4c6e5d25b23e015fcab4e7
+  MobFoxSDK: 72c782e53701b28150be2cb6a67042ab59717f61
+  mopub-ios-sdk: 839af95010f726e34ef51d639de07adef71c65c7
+  OneSignal: 95127bce89b9e495079e7205e3d47c88590b5750
+  Revmob: e2e26c66ba6bf477d9bf78e71c3bedecee544906
+  RevvForMobile: d88a3c7097a8bd733975622967fe8c684839d9a2
+  SICAds: 752a23e996a773f171126e72df7952f12c8c3fac
+  SmaatoSDK: ccf0b4eb6047d9efa0fc349165ea4fe298afb852
+  SpotX-SDK: 486548664d1eb4bd52383ea95ebc1c4512cf41af
+  StartApp: 3c12e30176fd698ddeadf96cb42bd39d52a47f51
+  UnityAds: c10e4038b49417349b391f9e010e05c5d8498966
+  VungleSDK-iOS: 88407b1210c1c5487b8261160a8b3a3c8f5dfcef
+  YandexMobileAds: dff971683fae24e85f3e367a83ffb25230b4d15a
+  YandexMobileMetrica: 9f8b0287aa88db096eef45396830f97e308874a0
+  Zip: 8877eede3dda76bcac281225c20e71c25270774c
+
+PODFILE CHECKSUM: 3f7cf112ed89e822084d02eb14f039a7c5cc4563
+
+COCOAPODS: 1.4.0.beta.2

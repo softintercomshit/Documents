@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BrowserController-->
+        <scene sceneID="ut1-RM-ZXW">
+            <objects>
+                <viewController storyboardIdentifier="BrowserController" id="Wko-xh-awo" userLabel="BrowserController" customClass="BrowserController" customModule="Documents" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XpP-x0-Uo9"/>
+                        <viewControllerLayoutGuide type="bottom" id="6lo-7I-uq4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wwf-8X-IX6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFO-MT-6Yk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VX5-PI-md2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lUa-aZ-sNS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Wko-xh-awo" id="due-KJ-RdM"/>
+                                    <outlet property="delegate" destination="Wko-xh-awo" id="vFD-hY-k7y"/>
+                                </connections>
+                            </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wv-Rb-oET">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="7hL-CS-DZa">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="44"/>
+                                        <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="rewind" id="say-1U-38c">
+                                        <connections>
+                                            <action selector="goBack:" destination="Wko-xh-awo" id="IXl-yV-e6j"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="X38-WT-Pzp"/>
+                                    <barButtonItem enabled="NO" systemItem="fastForward" id="uug-xK-pjg">
+                                        <connections>
+                                            <action selector="goForward:" destination="Wko-xh-awo" id="A3Y-Eh-58f"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LPt-KI-jqG"/>
+                                    <barButtonItem systemItem="action" id="KD5-bi-whY">
+                                        <connections>
+                                            <action selector="action:" destination="Wko-xh-awo" id="mOx-Ke-s8c"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sbz-VG-Ac2"/>
+                                    <barButtonItem systemItem="bookmarks" id="3PX-07-p59">
+                                        <connections>
+                                            <action selector="bookMarks:" destination="Wko-xh-awo" id="WAe-Uf-kNV"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="kNy-cg-XIE"/>
+                                    <barButtonItem systemItem="trash" id="fIG-eV-uz2">
+                                        <connections>
+                                            <action selector="tabsAction:" destination="Wko-xh-awo" id="cnX-6w-pNS"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iFO-MT-6Yk" firstAttribute="leading" secondItem="wwf-8X-IX6" secondAttribute="leading" id="895-Xy-ENd"/>
+                            <constraint firstAttribute="trailing" secondItem="VX5-PI-md2" secondAttribute="trailing" id="BMN-FI-HRe"/>
+                            <constraint firstAttribute="trailing" secondItem="iFO-MT-6Yk" secondAttribute="trailing" id="Hky-P3-WMm"/>
+                            <constraint firstAttribute="trailing" secondItem="1Wv-Rb-oET" secondAttribute="trailing" id="Ih4-Ue-8P2"/>
+                            <constraint firstItem="1Wv-Rb-oET" firstAttribute="top" secondItem="VX5-PI-md2" secondAttribute="bottom" id="R0l-Wd-91r"/>
+                            <constraint firstItem="VX5-PI-md2" firstAttribute="leading" secondItem="wwf-8X-IX6" secondAttribute="leading" id="ZZG-Hv-W7i"/>
+                            <constraint firstItem="iFO-MT-6Yk" firstAttribute="top" secondItem="XpP-x0-Uo9" secondAttribute="bottom" id="cXe-9F-ASp"/>
+                            <constraint firstItem="VX5-PI-md2" firstAttribute="top" secondItem="XpP-x0-Uo9" secondAttribute="bottom" id="kPx-HS-FMP"/>
+                            <constraint firstItem="6lo-7I-uq4" firstAttribute="top" secondItem="1Wv-Rb-oET" secondAttribute="bottom" id="mGj-K3-ebE"/>
+                            <constraint firstItem="1Wv-Rb-oET" firstAttribute="top" secondItem="iFO-MT-6Yk" secondAttribute="bottom" id="tym-wm-uZ6"/>
+                            <constraint firstItem="1Wv-Rb-oET" firstAttribute="leading" secondItem="wwf-8X-IX6" secondAttribute="leading" id="vOJ-r4-w7B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tHk-3K-h0f">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="actionButtonItem" destination="KD5-bi-whY" id="TGw-6c-Nw1"/>
+                        <outlet property="backButtonItem" destination="say-1U-38c" id="KUh-DX-S7d"/>
+                        <outlet property="bookmarksButtonItem" destination="3PX-07-p59" id="fos-Mi-Qhc"/>
+                        <outlet property="bookmarksCollectionView" destination="VX5-PI-md2" id="jbU-sx-rpL"/>
+                        <outlet property="forwardButtonItem" destination="uug-xK-pjg" id="K5B-7S-0fR"/>
+                        <outlet property="searchBar" destination="aQP-eV-8BR" id="lG1-Qg-0bM"/>
+                        <outlet property="webViewConteiner" destination="iFO-MT-6Yk" id="oDR-k8-VBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jZe-K9-t1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search or type URL" showsSearchResultsButton="YES" id="aQP-eV-8BR">
+                    <rect key="frame" x="0.0" y="0.0" width="359" height="56"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="webSearch" returnKeyType="go"/>
+                    <connections>
+                        <outlet property="delegate" destination="Wko-xh-awo" id="n2J-lm-n54"/>
+                    </connections>
+                </searchBar>
+            </objects>
+            <point key="canvasLocation" x="844" y="147.97601199400302"/>
+        </scene>
+    </scenes>
+</document>

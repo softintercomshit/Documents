@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="X57-yV-RWV">
+            <objects>
+                <navigationController id="RWS-NA-Bep" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0os-Gt-w58">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OyV-Tg-fbe" kind="relationship" relationship="rootViewController" id="lp5-Qh-afh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dI-QK-ZVy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-772" y="-99"/>
+        </scene>
+        <!--Bookmarks Controller-->
+        <scene sceneID="K8m-Z8-3gq">
+            <objects>
+                <viewController storyboardIdentifier="BookmarksController" id="OyV-Tg-fbe" userLabel="Bookmarks Controller" customClass="BookmarksController" customModule="Documents" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xse-1j-Ad4"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Xy-ck-RNU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EEv-2u-GXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aL-Wz-43X">
+                                <rect key="frame" x="0.0" y="0.0" width="1" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9j6-GR-u8Z">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OyV-Tg-fbe" id="gpj-Dt-CeM"/>
+                                    <outlet property="delegate" destination="OyV-Tg-fbe" id="2OV-Xq-0DM"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCM-Kl-GdL">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cCg-9V-LFS"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qjg-ci-Kpw"/>
+                                    <barButtonItem title="Edit" id="agU-TO-Xy7">
+                                        <connections>
+                                            <action selector="editAction:" destination="OyV-Tg-fbe" id="skw-Lu-uh0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Xy-ck-RNU" firstAttribute="top" secondItem="PCM-Kl-GdL" secondAttribute="bottom" id="7bs-BU-bIT"/>
+                            <constraint firstAttribute="trailing" secondItem="PCM-Kl-GdL" secondAttribute="trailing" id="K4u-Ch-1lO"/>
+                            <constraint firstItem="PCM-Kl-GdL" firstAttribute="top" secondItem="9j6-GR-u8Z" secondAttribute="bottom" id="SJQ-RJ-MwF"/>
+                            <constraint firstItem="9j6-GR-u8Z" firstAttribute="top" secondItem="xse-1j-Ad4" secondAttribute="bottom" id="af7-mF-088"/>
+                            <constraint firstItem="9j6-GR-u8Z" firstAttribute="leading" secondItem="EEv-2u-GXI" secondAttribute="leading" id="dGu-O3-1Cc"/>
+                            <constraint firstAttribute="trailing" secondItem="9j6-GR-u8Z" secondAttribute="trailing" id="dRN-1s-LbD"/>
+                            <constraint firstItem="PCM-Kl-GdL" firstAttribute="leading" secondItem="EEv-2u-GXI" secondAttribute="leading" id="lai-iE-dST"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xpj-8X-tbO">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="6hh-HJ-Czk">
+                            <rect key="frame" x="105" y="7.5" width="165" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Bookmarks"/>
+                                <segment title="History"/>
+                            </segments>
+                            <connections>
+                                <action selector="displayTypeSegmentControlAction:" destination="OyV-Tg-fbe" eventType="valueChanged" id="m74-Yf-frV"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="editButton" destination="agU-TO-Xy7" id="cXu-ar-Bck"/>
+                        <outlet property="tableViewOutlet" destination="9j6-GR-u8Z" id="xyi-vH-b8s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygc-Qa-eh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="-99"/>
+        </scene>
+    </scenes>
+</document>
